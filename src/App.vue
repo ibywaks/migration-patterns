@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <timeline></timeline>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Timeline from './components/Timeline';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Timeline
   }
 }
 </script>
@@ -19,7 +21,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
