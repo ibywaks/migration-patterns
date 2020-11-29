@@ -55,10 +55,11 @@ export default {
 
 <style scoped>
   .timeline-item {
+    width: 206px;
+    height: 600px;
+    margin: 0 4em;
     text-align: center;
-    width: 200px;
-    margin: 0px 20px;
-    display: inline-table;
+    /* display: inline-table; */
   }
   .sub-time {
     top: 50px;
