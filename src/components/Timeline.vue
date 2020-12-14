@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// import * as d3 from 'd3';
 import Flickity from "vue-flickity";
 import TimelineItem from "./TimelineItem";
 
@@ -115,9 +114,6 @@ export default {
   mounted() {
     this.$refs.flickity.playPlayer();
   },
-  // created() {
-  //   d3.selectAll('.timeline-item')
-  // }
 };
 </script>
 

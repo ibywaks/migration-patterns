@@ -1,0 +1,195 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Qatar"
+        }, {
+            "id": 2,
+            "name": "India"
+        }, {
+            "id": 3,
+            "name": "Equatorial Guinea"
+        },
+        {
+            "id": 4,
+            "name": "Democratic Republic of Korea"
+        },
+        {
+            "id": 5,
+            "name": "Ireland"
+        },
+        {
+            "id": 6,
+            "name": "Ukraine"
+        },
+        {
+            "id": 7,
+            "name": "Nauru"
+        },
+        {
+            "id": 8,
+            "name": "Malawi"
+        },
+        {
+            "id": 9,
+            "name": "Turkey" 
+        },
+        {
+            "id": 10,
+            "name": "Liechtenstein"
+        },
+        {
+            "id": 11,
+            "name": "Algeria"
+        },
+        {
+            "id": 12,
+            "name": "American Samos"
+        },
+        {
+            "id": 13,
+            "name": "Morroco"
+        },
+        {
+            "id": 14,
+            "name": "Andorra"
+        },
+        {
+            "id": 15,
+            "name": "Italy"
+        },
+        {
+            "id": 16,
+            "name": "United Arab Emirates"
+        },
+        {
+            "id": 17,
+            "name": "Canada"
+        },
+        {
+            "id": 18,
+            "name": "Saudi Arabia"
+        },
+        {
+            "id": 19,
+            "name": "United Kingdom",
+            "code": "uk"
+        },
+        {
+            "id": 20,
+            "name": "Russia"
+        },
+        {
+            "id": 21,
+            "name": "Germany"
+        },
+        {
+            "id": 22,
+            "name": "France"
+        },
+        {
+            "id": 23,
+            "name": "United States of America"
+        }
+    ],
+    "links": [
+        {
+            "source": 1,
+            "target": 16,
+            "type": "low"
+        },
+        {
+            "source": 2,
+            "target": 16,
+            "type": "high"
+        },
+        {
+            "source": 3,
+            "target": 17,
+            "type": "low"
+        },
+        {
+            "source": 2,
+            "target": 17,
+            "type": "high"
+        },
+        {
+            "source": 4,
+            "target": 18,
+            "type": "low"
+        },
+        {
+            "source": 5,
+            "target": 18,
+            "type": "high"
+        },
+        {
+            "source": 7,
+            "target": 19,
+            "type": "low"
+        },
+        {
+            "source": 5,
+            "target": 19,
+            "type": "high"
+        },
+        {
+            "source": 8,
+            "target": 20,
+            "type": "low"
+        },
+        {
+            "source": 6,
+            "target": 20,
+            "type": "high"
+        },
+        {
+            "source": 9,
+            "target": 21,
+            "type": "high"
+        },
+        {
+            "source": 10,
+            "target": 21,
+            "type": "low"
+        },
+        {
+            "source": 12,
+            "target": 22,
+            "type": "low"
+        },
+        {
+            "source": 11,
+            "target": 22,
+            "type": "high"
+        },
+        {
+            "source": 16,
+            "target": 23
+        },
+        {
+            "source": 17,
+            "target": 23
+        },
+        {
+            "source": 18,
+            "target": 23
+        },
+        {
+            "source": 19,
+            "target": 23
+        },
+        {
+            "source": 20,
+            "target": 23
+        },
+        {
+            "source": 21,
+            "target": 23
+        },
+        {
+            "source": 22,
+            "target": 23
+        }
+    ]
+}
