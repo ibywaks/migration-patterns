@@ -6,13 +6,14 @@
         }, {
             "id": 2,
             "name": "India"
-        }, {
+        },{
             "id": 3,
             "name": "Equatorial Guinea"
         },
         {
             "id": 4,
-            "name": "Democratic Republic of Korea"
+            "name": "Democratic People's Republic of Korea",
+            "flagName": "Korea North"
         },
         {
             "id": 5,
@@ -44,11 +45,12 @@
         },
         {
             "id": 12,
-            "name": "American Samos"
+            "name": "American Samoa",
+            "flagName": "Samoa"
         },
         {
             "id": 13,
-            "name": "Morroco"
+            "name": "Morocco"
         },
         {
             "id": 14,
@@ -72,8 +74,7 @@
         },
         {
             "id": 19,
-            "name": "United Kingdom",
-            "code": "uk"
+            "name": "United Kingdom"
         },
         {
             "id": 20,

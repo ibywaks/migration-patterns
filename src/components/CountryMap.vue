@@ -9,7 +9,7 @@
 
 <script>
 import * as d3 from 'd3';
-// import {event as currentEvent} from 'd3-selection';
+import { kebabCase } from 'lodash';
 
 const countryFixtures = require('../fixtures/country-map.json');
 
@@ -44,6 +44,19 @@ export default {
 
         // Initialize the links
       const data = countryFixtures;
+      const arrowPoints = [[0, 0], [0, 20], [20, 10]];
+
+      svg.append("defs").append("marker")
+        .attr("id", "arrow")
+        .attr('viewBox', [0, 0, 10, 10])
+        .attr("refX", 5)
+        .attr("refY", 5)
+        .attr("markerWidth", 10)
+        .attr("markerHeight", 10)
+        .attr('orient', 'auto-start-reverse')
+        .append("path")
+        .attr('d', d3.line()(arrowPoints))
+        .style("fill", "black");
 
       const link = svg.selectAll('line')
         .data(data.links)
@@ -54,34 +67,40 @@ export default {
           if (d.type === 'low') return '#ff8080';
           return '#aaa'; 
         })
+        // .attr("class", () => "arrow")
+        // .attr("marker-end", "url(#arrow)")
         .attr("id",(d,i)=>{ return "link"+i; });
 
-      // const imgClassCode = function(d){ return "flag-" + d.code; }
-      // const imgUrl = function(d){ return "url(.flag.flag-" + d.code + ")" }
-      // const baseImageUrl = function(){ return "http://i1067.photobucket.com/albums/u434/josh5231/flags_zpskmzyrpsk.png"; }
+      const imgClassCode = function(d){ return "flag-" + kebabCase(d.name); }
+      const baseImageUrl = function(d){
+        return `https://www.countries-ofthe-world.com/flags-normal/flag-of-${(d.flagName || d.name).replaceAll(' ', '-')}.png`; 
+      }
 
       // eslint-disable-next-line no-unused-vars
-      // const imgPattern = svg.selectAll("pattern").data(data.nodes)
-      //   .enter()
-      //   .append("pattern")
-      //       .attr("class", imgClassCode)
-      //       .attr("width", 1)
-      //       .attr("height", 1)
-      //       .attr("patternUnits", "objectBoundingBox")
-      //     .append("image")
-      //       .attr("x", 0)
-      //       .attr("y", 0)
-      //       .attr("width", 150)
-      //       .attr("height", 150)
-      //       .attr("xlink:href", baseImageUrl)
+      const imgPattern = svg.selectAll("pattern").data(data.nodes)
+        .enter()
+        .append("pattern")
+            .attr("id", imgClassCode)
+            .attr("width", 1)
+            .attr("height", 1)
+            .attr("patternUnits", "objectBoundingBox")
+          .append("image")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", 80)
+            .attr("height", 80)
+            .attr("xlink:href", baseImageUrl)
 
       // Initialize the nodes
       const node = svg.selectAll('circle')
         .data(data.nodes)
         .enter()
         .append('circle')
-        .attr('r', 25)
-        .style("fill", "#69b3a2")
+        .attr('r', 40)
+        // .style("fill", "#69b3a2")
+        .style('fill', (d) => {
+            return `url(#flag-${kebabCase(d.name)})`
+        })
         // .style("stroke", color)
         .on("mouseover",(d, item)=>{
             tooltip.transition().duration(400).style("opacity",0.9);
@@ -94,7 +113,7 @@ export default {
 
       // Simulations - list the force you want to apply on the network
       const simulation = d3.forceSimulation(data.nodes)
-        .force('link', d3.forceLink()
+        .force('link', d3.forceLink().distance(() => 120)
           .id(function(d) { return d.id })
           .links(data.links)
         )
