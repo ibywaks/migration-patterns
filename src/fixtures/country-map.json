@@ -2,71 +2,88 @@
     "nodes": [
         {
             "id": 1,
-            "name": "Qatar"
+            "name": "Qatar",
+            "population": 12204
         }, {
             "id": 2,
-            "name": "India"
+            "name": "India",
+            "population": 6623177
         },{
             "id": 3,
-            "name": "Equatorial Guinea"
+            "name": "Equatorial Guinea",
+            "population": 36178
         },
         {
             "id": 4,
             "name": "Democratic People's Republic of Korea",
-            "flagName": "Korea North"
+            "flagName": "Korea North",
+            "population": 39784
         },
         {
             "id": 5,
-            "name": "Ireland"
+            "name": "Ireland",
+            "population": 917286
         },
         {
             "id": 6,
-            "name": "Ukraine"
+            "name": "Ukraine",
+            "population": 5545760
         },
         {
             "id": 7,
-            "name": "Nauru"
+            "name": "Nauru",
+            "population": 1419
         },
         {
             "id": 8,
-            "name": "Malawi"
+            "name": "Malawi",
+            "population": 143437
         },
         {
             "id": 9,
-            "name": "Turkey" 
+            "name": "Turkey",
+            "population": 2640033
         },
         {
             "id": 10,
-            "name": "Liechtenstein"
+            "name": "Liechtenstein",
+            "population": 3428
         },
         {
             "id": 11,
-            "name": "Algeria"
+            "name": "Algeria",
+            "population": 921727
         },
         {
             "id": 12,
             "name": "American Samoa",
-            "flagName": "Samoa"
+            "flagName": "Samoa",
+            "population": 2041
         },
         {
             "id": 13,
-            "name": "Morocco"
+            "name": "Morocco",
+            "population": 1748251
         },
         {
             "id": 14,
-            "name": "Andorra"
+            "name": "Andorra",
+            "population": 3792
         },
         {
             "id": 15,
-            "name": "Italy"
+            "name": "Italy",
+            "population": 3351006
         },
         {
             "id": 16,
-            "name": "United Arab Emirates"
+            "name": "United Arab Emirates",
+            "population": 79545
         },
         {
             "id": 17,
-            "name": "Canada"
+            "name": "Canada",
+            "population": 998163
         },
         {
             "id": 18,
@@ -74,23 +91,28 @@
         },
         {
             "id": 19,
-            "name": "United Kingdom"
+            "name": "United Kingdom",
+            "population": 3794333
         },
         {
             "id": 20,
-            "name": "Russia"
+            "name": "Russia",
+            "population": 12662893
         },
         {
             "id": 21,
-            "name": "Germany"
+            "name": "Germany",
+            "population": 2929448
         },
         {
             "id": 22,
-            "name": "France"
+            "name": "France",
+            "population": 1215895
         },
         {
             "id": 23,
-            "name": "United States of America"
+            "name": "United States of America",
+            "population": 1739233
         }
     ],
     "links": [
