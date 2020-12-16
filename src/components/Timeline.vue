@@ -41,9 +41,13 @@ export default {
         selectedAttraction: 0.005,
         friction: 0.15,
       },
-      numberShown: 5,
       showStart: 0,
       timelines: [
+        {
+          description:
+            "Congress first centralized control over immigration under the Secretary of State with a Commissioner.",
+          date: 1864,
+        },
         {
           description:
             "Aliens of African nativity became eligible for citizenship",
@@ -84,6 +88,18 @@ export default {
           percentageOfPopulation: 13.6,
         },
         {
+          description: "Knowledge of English was made a basic requirement for migration.",
+          date: 1906,
+        },
+        {
+          description: "The first quantitative immigration law was adopted. It set temporary annual quotas according to nationality.",
+          date: 1921,
+        },
+        {
+          description: "Procedures were adopted to facilitate immigration of foreign-born wives, fiance(e)s, husbands, and children of U.S. armed forces personnel.",
+          date: 1946,
+        },
+        {
           description: "",
           date: 2000,
           numberOfImmigrants: 31107900,
@@ -93,6 +109,9 @@ export default {
     };
   },
   computed: {
+    numberShown() {
+      return this.timelines.length;
+    },
     timelineSize() {
       return this.timelines.length;
     },
